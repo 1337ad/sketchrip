@@ -1,7 +1,9 @@
 # sketchrip
 Ripper and Conversion for Sketchfab Models
+
 Please note this repository has no support. I literally do not care about this project. This repo will never be updated. Don't bother opening issues or pull requests - I won't answer them.
 Feel free, though, to fork the repo and fix/improve it.
+
 Also note that this software is janky, buggy, and doesn't work all the time: expect to do some manual tinkering to fix it.
 # How does this work?
 Sketchrip consists of two main components.
