@@ -32,6 +32,8 @@ Now, navigate to a sketchfab model. It is recommended to do this in a new Firefo
 Once the model has fully loaded, a red "DOWNLOAD" button should appear in the top right of the 3D viewer. Click it.
 At this point, you better hope that you disabled "Always ask to save files" in Firefox settings, because otherwise you're going to have to click "save" for all these nice .obj and .mtl files.
 
+*Note: if this is the first model you have downloaded, you will probably notice that it only opens one image file. To fix this, go back to the Sketchfab model page, and you should see a notice that states that Firefox blocked popups. Hit options, then "Allow popups for sketchfab.com", and it should now work.*
+
 At this point, your download folder should have a few .obj and corresponding .mtl files, and you should have a bunch of tabs with image textures in them. 
 If you installed the "Pull Tabs" extension like I recommended above, then this should be easy. Open the pull tabs extension, and click "options". Scroll down to "Services" and disable everything except "Download". Scroll to the bottom of the page and hit "Submit", and close the settings page.
 
