@@ -201,13 +201,15 @@
     var dodownload = function() {
         console.log("[UserScript]download");
         window.allmodel.forEach(function(obj) {
-            var mdl = {
-                name: obj._name,
-                obj:parseobj(obj),
-                tex:parsetex(obj),
+            if (obj._geometry) {
+                var mdl = {
+                    name: obj._name ?? obj._geometry._instanceID,
+                    obj:parseobj(obj._geometry),
+                    tex:parsetex(obj._geometry),
+                }
+                console.log(mdl);
+                dosavefile(mdl);
             }
-            console.log(mdl);
-            dosavefile(mdl);
         })
     }
 
@@ -227,7 +229,7 @@
     }
 
 
-    var regpattern = /(drawImplementation:\s*function\([^\(\{]*\{)[^]*getInstanceID/;
+    var regpattern = /(drawGeometry:\s*function\([^\(\{]*\{)[^]*getInstanceID/;
 
     window.allmodel = [];
     window.drawhook = function(obj) {
