@@ -1,3 +1,6 @@
+## Update 30/11/21
+Looks like Sketchfab has done something to their website that makes this ripper not work properly anymore. I don't have the time to fix this issue, but anyone that's interested is welcome to try and fix it and submit a pull request. The current issue is that on line 264 of the script, the injected function attemps to pass `this` as an argument to the function `window.drawhook`. Under normal circumstances, `this` should return the parent object. In this case, it returns undefined.
+
 # sketchrip
 Ripper and Conversion for Sketchfab Models
 
