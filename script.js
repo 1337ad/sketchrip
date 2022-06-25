@@ -229,7 +229,7 @@
     }
 
 
-    var regpattern = /(drawGeometry:\s*function\([^\(\{]*\{)[^]*getInstanceID/;
+    var regpattern = /(drawGeometry:\s*function\(\)\{.*e\s*=\s*t.getLastProgramApplied\(\);)/;
 
     window.allmodel = [];
     window.drawhook = function(obj) {
